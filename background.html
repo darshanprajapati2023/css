@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            background-color: red;
+        }
+        div{
+            color: white;
+            height: 500px;
+            margin: 10px 0;
+            border: solid 10px black;
+        }
+        .background-color{
+            background-color: blue;
+
+        }
+        .background-img{
+            background-image: url(../img/bgimg1.jpg);
+        }
+        .background-repeat{
+            background-image: url(../img/bgimg1.jpg);
+            /* background-repeat: no-repeat; 
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;  */
+        }
+        .background-attachment{
+            background-image: url(../img/bgimg1.jpg);
+            background-attachment: fixed;
+         }
+         .background-position{
+            background-image: url(../img/bgimg1.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center;
+            background-position: left;
+            background-position: right; */
+            background-position: center left;
+            background-position: center right;
+            background-position: center center;
+         }
+         .background-size{
+            background-image: url(https://picsum.photos/seed/picsum/1000/500);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+
+         }
+         .background{
+            /* background-color: aqua;
+            background-image: url(../img/bgimg1.jpg); */
+            background: red;
+            background: no-repeat cover url(../img/bgimg1.jpg);
+            
+         }
+         .background-flag{
+            background: linear-gradient(360deg, orange , white , green)
+         }
+    </style>
+</head>
+<body>
+    <h1>background-color</h1>
+    <h1>background-img</h1>
+    <h1>background-repeat</h1>
+    <h1>background-attachment</h1>
+    <h1>background-position</h1>
+    <h1>background-size</h1>
+    <h1>background</h1>
+    <h1>background-flag</h1>
+
+    <!-- <p></p> -->
+    <div class="background-color">background-color</div>
+    <div class="background-img">background-img</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-position">background-position</div>
+    <div class="background-size">background-size</div>
+    <div class="background">background</div>
+    <div class="background-flag">background-flag</div>
+</body>
+</html>
