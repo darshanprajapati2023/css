@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            background-color: gray;
+            /* background-color: #f2f2f2; */
+            height: 500px;
+        }
+        .container{
+            width: 1140px;
+            margin: 0 auto;
+        }
+        .logo{
+            /* background-color: #f2f2f2; */
+            background-color: green;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .links{
+            /* background-color: #f2f2f2; */
+            background-color: orange;
+            text-align: center;
+            color: white;
+            grid-column-start: 3;
+            grid-column-end: 11;
+        }
+        .data{
+            /* background-color: #f2f2f2; */
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            grid-column-start: 1;
+            grid-column-end: 11;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
+        /* a{
+            color: black;
+            text-decoration: none;
+        } */
+        /* ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 15px;
+        } */
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <div class="grid">
+                <div class="logo">
+                    <h1>logo</h1>
+                    <!-- <img src="../img/apple-logo.png" alt=""> -->
+                </div>
+                <div class="links">
+                    <h1>links</h1>
+                    <!-- <ul>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">TV & Home</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul> -->
+                </div>
+                <div class="data">
+                    <h1>data</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
